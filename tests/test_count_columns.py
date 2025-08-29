@@ -2,7 +2,7 @@ import pandas as pd
 import os
 from collections import Counter
 
-DIRETORIO = "Csv_files"
+DIRETORIO = "../etl/Csv_files"
 
 todas_colunas = []
 

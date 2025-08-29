@@ -1,7 +1,7 @@
 import os
 
 # Caminho da pasta
-pasta = "/home/joao/pysus/projeto/projeto_dbt/models/intermediate"
+pasta = "../DBT/models/intermediate"
 
 # Cria a pasta caso não exista
 os.makedirs(pasta, exist_ok=True)

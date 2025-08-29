@@ -4,6 +4,8 @@ import pandas as pd
 import os 
 from db import get_connection
 
+os.makedirs('Csv_files', exist_ok=True)
+
 STAGE_NAME = "DO_DATA"
 CSV_DIR = "Csv_files"
 

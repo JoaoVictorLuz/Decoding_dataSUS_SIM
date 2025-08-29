@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 
-input_dir = 'Parquet_files'
-output_dir = 'Csv_files'
+input_dir = '../etl/Parquet_files'
+output_dir = '../etl/Csv_files'
 
 for file in os.listdir(input_dir):
     if file.endswith('.parquet'):

@@ -1,13 +1,13 @@
 projeto_dbt:
   outputs:
     dev:
-      account: NQCMSZC-FNB67628
-      database: DATASUS
-      password: '#Hans3030@8802'
-      role: ACCOUNTADMIN
-      schema: RESULTS
+      account: ?
+      database: ?
+      password: '?'
+      role: ?
+      schema: ?
       threads: 2
       type: snowflake
-      user: JOAO
-      warehouse: COMPUTE_WH
+      user: ?
+      warehouse: ?
   target: dev

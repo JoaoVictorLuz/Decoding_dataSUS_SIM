@@ -5,9 +5,9 @@ import os
 
 # Lê o arquivo parquet e transforma em DataFrame
 
-df_BR_2000 = pd.read_parquet('Parquet_files/DOBR2000.parquet')
-df_AC_2000 = pd.read_parquet('Parquet_files_test/DOAC2000.parquet')
-df_AL_2000 = pd.read_parquet('Parquet_files_test/DOAL2000.parquet')
+df_BR_2000 = pd.read_parquet('etl/Parquet_files/DOBR2000.parquet')
+df_AC_2000 = pd.read_parquet('etl/Parquet_files_test/DOAC2000.parquet')
+df_AL_2000 = pd.read_parquet('etl/Parquet_files_test/DOAL2000.parquet')
 
 # teste com acre 
 print(df_AC_2000.head().iloc[:, :20])

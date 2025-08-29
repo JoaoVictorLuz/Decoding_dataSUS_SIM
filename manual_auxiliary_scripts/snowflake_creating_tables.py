@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from db import get_connection
 
-DIRETORIO = "Csv_files"
+DIRETORIO = "../etl/Csv_files"
 
 # Conexão Snowflake
 conn = get_connection()

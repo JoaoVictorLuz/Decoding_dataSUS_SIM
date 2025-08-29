@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Diretório onde estão os CSVs
-diretorio = "Csv_files"
+diretorio = "../etl/Csv_files"
 
 # Lista todos os arquivos CSV do diretório
 arquivos_csv = [f for f in os.listdir(diretorio) if f.lower().endswith(".csv")]
