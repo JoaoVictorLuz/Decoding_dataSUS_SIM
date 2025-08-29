@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: snowflake
+    database: DATASUS
+    schema: PUBLIC
+    tables:
+      - name: DOBR1996
+      - name: DOBR1997
+      - name: DOBR1998
+      - name: DOBR1999
+      - name: DOBR2000
+      - name: DOBR2001
+      - name: DOBR2002
+      - name: DOBR2003
+      - name: DOBR2004
+      - name: DOBR2005
+      - name: DOBR2006
+      - name: DOBR2007
+      - name: DOBR2008
+      - name: DOBR2009
+      - name: DOBR2010
+      - name: DOBR2011
+      - name: DOBR2012
+      - name: DOBR2013
+      - name: DOBR2014
+      - name: DOBR2015
+      - name: DOBR2016
+      - name: DOBR2017
+      - name: DOBR2018
+      - name: DOBR2019
+      - name: DOBR2020
+      - name: DOBR2021
+      - name: DOBR2022
+      - name: DOBR2023

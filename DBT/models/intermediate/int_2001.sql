@@ -1,0 +1,45 @@
+with do_2001 as (
+    select
+   {{decode_tipobito('TIPOBITO')}} as tipobito,
+    {{decode_dt('DTOBITO')}} as dtobito,
+    CODIGO_MUNICIPIO_NATURAL,
+    {{decode_dt('DTNASC')}} as dtnasc,
+    IDADE,
+    {{decode_sexo('SEXO')}} as sexo,
+    {{decode_racacor('RACACOR')}} as racacor,
+    {{decode_estciv('ESTCIV')}} as estciv,
+    {{decode_esc('ESCOLARIDADE_EM_ANOS')}} as ESCOLARIDADE_EM_ANOS,
+    OCUP,
+    CODIGO_MUNICIPIO_RESIDENCIA,
+    {{decode_local_do_obito('LOCAL_DO_OBITO')}} as local_do_obito,
+    CODIGO_MUNICIPIO_OBITO,
+    {{decode_number_clean('IDADEMAE')}} as idademae,
+    {{decode_esc('ESCOLARIDADE_DA_MAE')}} as escolaridade_da_mae,
+    OCUPMAE,
+    {{decode_number_clean('QTDFILVIVO')}} as qtdfilvivo,
+    {{decode_number_clean('QTDFILMORT')}} as qtdfilmort,
+    {{decode_gravidez('TIPO_GRAVIDEZ')}} as tipo_gravidez,
+    {{decode_number_clean('SEMANAS_DE_GESTACAO')}} as semanas_de_gestacao,
+    {{decode_tipo_de_parto('TIPO_DE_PARTO')}} as tipo_de_parto,
+    {{decode_obitoparto('OBITOPARTO')}} as obitoparto,
+    {{decode_number_clean('PESO')}} as peso,
+    {{decode_sim_ou_nao('OBITO_GRAVIDEZ')}} as obito_gravidez,
+    {{decode_obitopuerp('OBITOPUERP')}} as obitopuerp,
+    {{decode_sim_ou_nao('ASSISTMED')}} as assistimed,
+    {{decode_sim_ou_nao('FEZ_EXAME')}} as fez_exame,
+    {{decode_sim_ou_nao('FEZ_CIRURGIA')}} as fez_cirurgia,
+    {{decode_sim_ou_nao('NECROPSIA')}} as necropsia,
+    LINHAA,
+    LINHAB,
+    LINHAC,
+    CID_LINHAD,
+    LINHAII,
+    CAUSABAS,
+    {{decode_tipo_morte_nao_natural('TIPO_MORTE_NAO_NATURAL')}} as tipo_morte_nao_natural,
+    {{decode_sim_ou_nao('ACIDTRAB')}} as acidtrab,
+    {{decode_fonte_da_informacao('FONTE_DA_INFORMACAO')}} as fonte_da_informacao
+    from {{ ref('stg_2001') }}
+)
+
+select *
+from do_2001
