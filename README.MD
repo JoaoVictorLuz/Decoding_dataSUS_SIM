@@ -19,7 +19,7 @@ Por segurança minhas credenciais do snowflake não serão disponibilizadas, mas
 ![img4](readme_assets/data_warehouse_final_table.png)
 
 ## Infelizmente ainda não é possível rodar o projeto 😥😥😥
-Mas não se preocupe, em breve (ou não) farei modificações que permitam que qualquer um com uma conta no snowflake possa rodar esse pipeline.
+Mas não se preocupe, em breve farei modificações que permitam que qualquer um com uma conta no snowflake possa rodar esse pipeline.
 
 Mas por que não é possível executar o projeto 🤷‍♂️🤷‍♂️🤷‍♂️? 
 1. Ele não foi feito com o objetivo de ser executado para o público geral!!! Isso faz parte do desafio do Bootcamp da Triggo.ai portanto essa é uma resolução de um desafio, não um pipeline de código aberto.
